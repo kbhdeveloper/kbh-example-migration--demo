@@ -1,51 +1,39 @@
-﻿# may contain OAuth secrets, do not commit
-.sitecore/user.json
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# NuGet cache for Sitecore CLI
-.sitecore/package-cache/
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# Ephemeral index caches used by serialization, do not commit
-.scindex
+# testing
+/coverage
+.playwright
 
-# Don't commit packages
-*.itempackage
-*.sicpackage
+# next.js
+/.next/
+/out/
 
+# production
+/build
 
-#Ignore thumbnails created by Windows
-Thumbs.db
-#Ignore files built by Visual Studio
-*.obj
-*.exe
-*.pdb
-*.user
-*.aps
-*.pch
-*.vspscc
-*_i.c
-*_p.c
-*.ncb
-*.suo
-*.tlb
-*.tlh
-*.bak
-*.cache
-*.ilk
-*.log
-[Bb]in
-[Dd]ebug*/
-*.lib
-*.sbr
-obj/
-[Rr]elease*/
-_ReSharper*/
-[Tt]est[Rr]esult*
-.vs/
-#Nuget packages folder
-packages/
-
-#Ignore system files
+# misc
 .DS_Store
+*.pem
 
-# VS Code settings
-.vscode/
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*
+!.env.example
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+.env*.local
